@@ -1,0 +1,95 @@
+/* https://www.pexels.com/license/ <- License for image:
+ Below font is replacable */
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Roboto+Mono:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Syne+Mono&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color:black;
+    overflow:hidden;
+    width:100%;
+}
+
+.img-container{
+    width: 100vw;
+    margin: 0px;
+}
+
+.ComingSoonIMG{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("ComingSoonIMG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(7.5px);
+    filter: brightness(30%);
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.ComingSoonText{
+    color:white;
+    width: 100%;
+    position: relative;
+    margin-top: -70vh;
+}
+
+.ComingSoonText h1{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 10vw;
+}
+
+.ComingSoonText h4{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 1vh;
+}
+
+.ComingSoonText h6{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 20vh;
+}
+
+.ComingSoonText a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.countdown-timer{
+    margin:auto;
+    background-color: rgb(22, 30, 48);
+    height: 6vh;
+    width:35vw;
+    border-radius: 25px;
+    margin-top: 5vh;
+}
+
+.countdown-timer h4{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 1.1vh;
+}
+
+@media only screen and (max-width: 750px) {
+    .countdown-timer h4{
+        padding-top: 1vh;
+    }
+    .countdown-timer{
+        height: 4vh;
+    }
+    .ComingSoonText h6{
+        font-size: 2vw;
+    }
+}
